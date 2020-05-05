@@ -9,7 +9,7 @@ import os, shutil
 #Pasta de origem dos audios
 origem = '/home/edson/Documents/PIBIC/BaseFinal/'
 saida = '/home/edson/Documents/PIBIC/BaseFinal/Autor/'
-rp_extract = "/home/edson/Documents/PIBIC/python/projeto/rp_extract_batch.py"
+rp_extract = "/home/edson/env/pibic/Rhythmic_Structural_Change-master/rp_extract_batch.py"
 classi = ['texto1', 'texto2', 'texto3', 'texto4', 'texto5']
 genero = ['m', 'f']
 idade = ['A', 'B', 'C', 'D']
@@ -40,7 +40,7 @@ for filename in lista:
             os.makedirs(dir_out)
             print("Diretorio criado!")
 
-        current = "/home/edson/env/ASC_PR-master/Baby_PR/AcousticStuff/rp_extract"
+        current = "/home/edson/env/pibic/"
         for files in os.listdir(current):
             if files.endswith('.rp'):
                 shutil.move(current + files, dir_out + files)

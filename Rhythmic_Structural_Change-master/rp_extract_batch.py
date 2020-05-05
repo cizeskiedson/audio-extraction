@@ -20,8 +20,8 @@ import datetime # for time printing
 import argparse
 import numpy as np
 
-from .audiofile_read import * # reading wav and mp3 files
-from .rp_feature_io import CSVFeatureWriter, HDF5FeatureWriter, read_csv_features, load_multiple_hdf5_feature_files
+from audiofile_read import * # reading wav and mp3 files
+from rp_feature_io import CSVFeatureWriter, HDF5FeatureWriter, read_csv_features, load_multiple_hdf5_feature_files
 from . import rp_extract as rp # Rhythm Pattern extractor
 
 
